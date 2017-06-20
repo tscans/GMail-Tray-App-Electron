@@ -26,7 +26,6 @@ ipcMain.on('email:send',(event,value)=>{
 	    pass: value.password
 	  }
 	});
-	console.log(value.email,value.password)
 	var mailOptions = {
 	  from: value.email,
 	  to: value.recipient,
